@@ -1,0 +1,27 @@
+Write a command-line utility implementing a modification of the euclidean algorithm, computing:
+1. A greatest common divisor (g) of some integers (i0, i1, i2, ..., in).
+2. Coefficients (k0, k1, k2, ..., kn) of the equation g = k0*i0 + k1*i1 + ... + kn*in.
+
+For example:
+
+  ./my_utility 8672 -640 26016 38378
+
+must yield
+
+  -32382 * 8672 + -438956 * -640 + 0 * 26016 + -3 * 38378 = 2
+    
+Notice, that coefficients might be different, for example:
+  
+  -32301 * 8672 + -438956 * -640 + -27 * 26016 + -3 * 38378 = 2
+  
+is also perfectly possible.  
+  
+Functional requirements are:
+
+* The program must take an unspecified number of integer arguments.
+* The program must produce an output as shown in the example above.
+* The program must exit correctly when given meaningless input.
+
+Implementation requirements are:
+* Programming language: Ruby.
+* Comments are required.

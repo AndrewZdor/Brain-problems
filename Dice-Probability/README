@@ -1,0 +1,18 @@
+Write a command-line utility computing a probability of getting a value M when throwing N dice.
+
+Functional requirements are:
+
+* The program must take two arguments: the number of dice N and the value M.
+* The program must output a single floating-point value: the probability of getting M when throwing N dice once.
+* The program must exit correctly when given meaningless input, such as negative number of dice etc.
+
+Performance requirements are:
+
+* A mean running time over 10 runs with 100 dice must not exceed 2 seconds, with a standard deviation not more than 50 milliseconds.
+* A mean running time over 10 runs with 200 dice must not exceed 3.5 seconds, with a standard deviation not more than 75 milliseconds. 
+* A mean running time over 10 runs with 300 dice must not exceed 7 seconds, with a standard deviation not more than 100 milliseconds. 
+
+Implementation requirements are:
+
+* Programming language: Ruby.
+* Comments are required.
